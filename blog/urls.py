@@ -4,6 +4,6 @@ from django.contrib.auth.views import LoginView
 urlpatterns = [
     path('',home,name='home'),
     path('login/',LoginView.as_view(template_name='login.html'),name='login'),
-    path('about',about,name='about'),
+    path('about/',about,name='about'),
 
 ]
